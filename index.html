@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style>
+            div {
+                min-height: 100px; background-color: silver;
+                text-align: center; vertical-align: middle; line-height: 100px;
+            }
+            div:hover { background-color: red; }
+        </style>
+        <script>
+            addEventListener("load", (e) => {
+                let timestampContainer = document.getElementById("tst")
+                setInterval(() => { timestampContainer.innerText = `current: ${Date.now()}` }, 30)
+            } )
+        </script>
+    </head>
+    <body>
+        <div id="tst">timestamp</div>
+    </body>
+</html>
